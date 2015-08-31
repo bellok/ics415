@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICS 415 w2c1</title>
+</head>
+<body>
+    <header>This is the header of the website</header>
+    <video width="400" controls>
+        <source src="" type="video/mp4">
+    </video>
+    <table border="1">
+        <tr>
+            <td colspan="2" width="600px">
+                <nav>This is the nav bar</nav>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top">
+                <aside>
+                    <form action="index.html">
+                        <p>
+                            Name:<br>
+                            <input type="text" name="name">
+                        </p>
+                        <p>
+                            Password:<br>
+                            <input type="password" name="password">
+                        </p>
+                        <input type="submit" value="Submit">
+                    </form>
+                </aside>
+            </td>
+            <td>
+                <canvas id="myCanvas" width="400" height="500" style="border: 1px solid #000000;">
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(95,50,40,0,2*Math.PI);
+                    ctx.stroke();
+                </script>
+            </td>
+        </tr>
+    </table>
+    <footer>This is using 'footer' tag</footer>
+</body>
+</html>
