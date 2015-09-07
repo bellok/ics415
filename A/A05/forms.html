@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A05 Forms</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<table id="container">
+    <tr>
+        <td colspan="2"><header>Color Spectrum</header></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <nav>
+                <p><a href="index.html">Home</a> | <a href="forms.html">Forms</a> | <a>Three</a></p>
+            </nav>
+        </td>
+    </tr>
+    <tr>
+        <td id="sidebar">
+            <h2>Humans</h2>
+            <p>
+                Just as there are millions of color combinations, there are millions of different personalities that
+                are constantly changed and defined by your surroundings.
+            </p>
+        </td>
+        <td id="main">
+            <h2>Tell me about you!</h2>
+            <form action="forms.html">
+                <p>Select your favorite color: <input type="color" name="color"></p>
+                <p>What is your email?<br>
+                    <input type="email" name="email">
+                </p>
+                <p>When is your birthday?<br>
+                    <input type="date" name="birthday">
+                </p>
+                <p>What is today's date?<br>
+                    <input type="datetime" name="today">
+                </p>
+                <p>What month and year did you begin college?<br>
+                    <input type="month" name="college">
+                </p>
+                <p>What is your favorite number?<br>
+                    <input type="number" name="fnum">
+                </p>
+                <p>How invasive do you think this questionnaire is?<br>
+                    Mildly <input type="range" name="invasive"> Extremely
+                </p>
+                <p>Do you want to say anything to me?<br>
+                    <input type="search" name="factor">
+                </p>
+                <p>What is your favorite website to visit?<br>
+                    <input type="url" name="fwebsite" value="http://www.________.com">
+                </p>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><footer>Footer</footer></td>
+    </tr>
+</table>
+</body>
+</html>
