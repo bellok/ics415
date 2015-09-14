@@ -1,0 +1,23 @@
+body {
+    background-image: url("abstract-background.jpg");
+    color: white;
+}
+.page-header {
+    font-family: "Carter One";
+    font-size: 72px;
+    text-align: center;
+    height: 25%;
+}
+#sidebar {
+
+}
+
+#footer {
+    color: black;
+    height: 50px;
+    text-align: center;
+}
+
+input {
+    color: black;
+}
