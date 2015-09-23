@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ICS 415 w5c2</title>
+
+    <!-- Bootstrap -->
+    <link href="../../frameworks/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="ph1">Panel Heading</div>
+                <div class="panel-body" id="pb1">Panel Content</div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary" id="panel2">
+                <div class="panel-heading" id="ph2">Panel Heading</div>
+                <div class="panel-body" id="pb2">Panel Content</div>
+            </div>
+        </div>
+        <div class="col-sm-3"id="3rd">
+            <div class="panel panel-success">
+                <div class="panel-heading" id="ph3">Panel Heading</div>
+                <div class="panel-body" id="pb3">Panel Content</div>
+            </div>
+        </div>
+        <div class="col-sm-3" id="4th">
+            <div class="panel panel-danger">
+                <div class="panel-heading" id="ph4">Panel Heading</div>
+                <div class="panel-body" id="pb4">Panel Content</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="div2">Second Div</div>
+                <div class="panel-body" id="div2_panel">
+                    <button>Click Me!</button>
+                    <p id="txtfile"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#ph1").mouseenter(function() {
+        $("#pb1").slideDown();
+    });
+    $("#ph1").mouseleave(function() {
+        $("#pb1").slideUp();
+    });
+    $("#ph2").mouseenter(function() {
+        $("#pb2").show("600", "swing");
+    });
+    $("#ph2").mouseleave(function () {
+        $("#pb2").hide("slow", "swing");
+    });
+    $("#ph3").mouseenter(function() {
+        $("#pb3").show("2500", "swing");
+    });
+    $("#ph3").mouseleave(function () {
+        $("#pb3").hide("2500", "linear");
+    });
+    $("#ph4").mouseenter(function() {
+        $("#pb4").show("400", "swing");
+    });
+    $("#ph4").mouseleave(function () {
+        $("#pb4").hide("400", "linear");
+    });
+    $("button").click(function() {
+        $("#txtfile").load("txtfile.txt");
+    })
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../frameworks/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
